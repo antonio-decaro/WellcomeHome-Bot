@@ -1,0 +1,46 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.2",
+    "body": [
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "Nome",
+                    "wrap": true,
+                    "weight": "Bolder"
+                },
+                {
+                    "type": "Input.Text",
+                    "placeholder": "Inserisci il nome",
+                    "id": "name"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "Cognome",
+                    "wrap": true,
+                    "weight": "Bolder"
+                },
+                {
+                    "type": "Input.Text",
+                    "placeholder": "Inserisci il cognome",
+                    "id": "surname"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "type": "Action.Submit",
+            "title": "Inserisci",
+            "style": "positive"
+        }
+    ]
+}
